@@ -11,8 +11,7 @@ class CheckoutRequest implements RequestContract
 {
     public function __construct(
         private readonly array $data
-    )
-    {
+    ) {
     }
 
     public function getRequest(string $method, array $auth): RequestInterface
@@ -21,7 +20,7 @@ class CheckoutRequest implements RequestContract
             $method,
             $auth['url'],
             ['Content-Type' => 'application/json', 'x-openapi-clientid' => 'ZKRNamOA1q9jKu5jFOjMsuW_WCFqmJ-dl1OT0Quw5e917ba8',
-                'x-src-cx-flow-id' => "34f4a04b.cb2770ae-438a-4372-a048-3caaeb748971.1689082013"],
+                'x-src-cx-flow-id' => '34f4a04b.cb2770ae-438a-4372-a048-3caaeb748971.1689082013'],
             json_encode($this->data)
         );
     }

@@ -17,7 +17,7 @@ class MastercardServiceTest extends TestCase
      * @test
      * @throws GuzzleException
      */
-    /*public function itMustReturnCheckoutEndpointResult(): void
+    public function itMustReturnCheckoutEndpointResult(): void
     {
         $authData = new AuthRequest(
             'https://sandbox.api.mastercard.com/srci/api/checkout', //'https://sandbox.api.mastercard.com/src/api/transaction/credentials',
@@ -32,31 +32,31 @@ class MastercardServiceTest extends TestCase
         $service = new MastercardService($authData, $client);
 
         $result = $service->checkout(new CheckoutRequest([
-            "dpaTransactionOptions" => [
-                "transactionAmount" => [
-                    "transactionAmount" => 50000,
-                    "transactionCurrencyCode" => "COP"
-                ]
+            'dpaTransactionOptions' => [
+                'transactionAmount' => [
+                    'transactionAmount' => 50000,
+                    'transactionCurrencyCode' => 'COP',
+                ],
             ],
-            "srcDpaId" => "a2833c3d-f6d6-487d-8c56-77eaeffc5546",
-            "correlationId" => "4f339be7.263297c2-eaf8-4509-b6ef-ae4b5083c7c5",
-            "checkoutType" => "CLICK_TO_PAY",
-            "checkoutReference" => [
-                "type" => "MERCHANT_TRANSACTION_ID",
-                "data" => [
-                    "merchantTransactionId" => "0a4e0d3.34f4a04b.dbdba979d4caac43665f0e95c45c472ec59511cb"
-                ]
-            ]
+            'srcDpaId' => 'a2833c3d-f6d6-487d-8c56-77eaeffc5546',
+            'correlationId' => '4f339be7.263297c2-eaf8-4509-b6ef-ae4b5083c7c5',
+            'checkoutType' => 'CLICK_TO_PAY',
+            'checkoutReference' => [
+                'type' => 'MERCHANT_TRANSACTION_ID',
+                'data' => [
+                    'merchantTransactionId' => '0a4e0d3.34f4a04b.dbdba979d4caac43665f0e95c45c472ec59511cb',
+                ],
+            ],
         ]));
 
         dd($result, 'checkout');
-    }*/
+    }
 
-    /**
+    /*
      * @test
      * @throws GuzzleException
      */
-    public function itMustReturnDpaRegistrationEndpointResult(): void
+    /*public function itMustReturnDpaRegistrationEndpointResult(): void
     {
         $authData = new AuthRequest(
             'https://sandbox.api.mastercard.com/srci/onboarding/org/f137455e-d81c-4d90-b2eb-1ce4e86d37ab/dpas/batch',
@@ -125,9 +125,9 @@ class MastercardServiceTest extends TestCase
         ]));
 
         dd($result, 'DPARegistration');
-    }
+    }*/
 
-    /**
+    /*
      * @test
      * @throws GuzzleException
      */

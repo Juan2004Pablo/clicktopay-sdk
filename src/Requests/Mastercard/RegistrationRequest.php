@@ -16,8 +16,6 @@ class RegistrationRequest implements RequestContract
 
     public function getRequest(string $method, array $auth): RequestInterface
     {
-        //$this->data['srcClientId'] = 'a2833c3d-f6d6-487d-8c56-77eaeffc5546';
-
         return new Request(
             $method,
             $auth['url'],
